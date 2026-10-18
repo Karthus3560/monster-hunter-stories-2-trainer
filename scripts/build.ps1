@@ -4,7 +4,8 @@ if($SigningThumbprint -and $SigningThumbprint -notmatch '^[0-9a-fA-F]{40}$'){thr
 $projectRoot=Split-Path -Parent $PSScriptRoot
 $project=Join-Path $projectRoot 'RidersToolkit.csproj'
 [xml]$metadata=Get-Content -LiteralPath $project
-$version=[string]$metadata.Project.PropertyGroup.Version
+$version=$metadata.SelectSingleNode('/Project/PropertyGroup/Version').InnerText.Trim()
+if($version -notmatch '^\d+\.\d+\.\d+$'){throw 'The project version must be a numeric major.minor.patch value.'}
 $output=Join-Path $projectRoot 'artifacts/publish'
 $artifacts=Join-Path $projectRoot 'artifacts'
 dotnet publish $project -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true -o $output
