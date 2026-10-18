@@ -36,7 +36,7 @@ Open the **Alt+W** quick panel while playing, tune movement and rewards, then re
 
 ## Quick start
 
-1. Download **`KinshipStudio-v3.5.1-Setup.exe`** from [Releases](https://github.com/Karthus3560/monster-hunter-stories-2-trainer/releases/latest).
+1. Download **`KinshipStudio-v3.5.2-Setup.exe`** from [Releases](https://github.com/Karthus3560/monster-hunter-stories-2-trainer/releases/latest).
 2. Run Setup once. It installs or upgrades the existing **Kinship Studio** app and desktop shortcut. It keeps one installation across versions; administrator access is not needed. The internal executable remains `RidersToolkit.exe`.
 3. Start Stories 2 from Steam or use **Launch game**. Load a solo save; the trainer connects automatically.
 4. Switch on the controls you want. Open quick controls with **Alt+W**. **F12** stops live maintenance controls.

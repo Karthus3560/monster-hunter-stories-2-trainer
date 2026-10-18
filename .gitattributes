@@ -11,3 +11,7 @@
 *.png binary
 *.ico binary
 *.ttf binary
+
+*.prompt export-ignore
+*.prompt.* export-ignore
+private-artwork/** export-ignore

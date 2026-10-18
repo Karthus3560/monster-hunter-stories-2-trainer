@@ -1,4 +1,4 @@
-# Kinship Studio v3.5.1
+# Kinship Studio v3.5.2
 
 Monster Hunter Stories 2: Wings of Ruin trainer and offline Egg & Gene Studio.
 Created by Ghaith Saad Jawad. Unofficial, open source, MIT-licensed code.
@@ -6,7 +6,7 @@ Created by Ghaith Saad Jawad. Unofficial, open source, MIT-licensed code.
 Project: https://github.com/Karthus3560/monster-hunter-stories-2-trainer
 Downloads: https://github.com/Karthus3560/monster-hunter-stories-2-trainer/releases/latest
 
-1. Run KinshipStudio-v3.5.1-Setup.exe once, then open Kinship Studio from its shortcut. Setup upgrades the same installed app; it does not create version-named copies. The portable ZIP remains available: extract it and run RidersToolkit.exe for manual use.
+1. Run KinshipStudio-v3.5.2-Setup.exe once, then open Kinship Studio from its shortcut. Setup upgrades the same installed app; it does not create version-named copies. The portable ZIP remains available: extract it and run RidersToolkit.exe for manual use.
 2. Start Stories 2, load a single-player save and let the trainer connect.
 3. Enable your chosen controls. Alt+W opens/closes quick controls; F12 stops live maintenance controls.
 

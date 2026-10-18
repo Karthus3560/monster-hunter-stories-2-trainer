@@ -32,3 +32,8 @@ Updates/
 *.key
 *.pvk
 signing-local*
+
+# Private authoring material is never part of a public release.
+*.prompt
+*.prompt.*
+private-artwork/

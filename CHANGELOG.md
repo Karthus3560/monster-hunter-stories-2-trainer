@@ -1,5 +1,12 @@
 # Changelog
 
+## 3.5.2 — public documentation cleanup
+
+- Simplify artwork notices while preserving ownership and third-party license notices.
+- Keep private authoring material out of source packages.
+- Gameplay features and the installed app identity stay unchanged.
+
+
 ## 3.5.1 — release packaging
 
 - Remove developer debug paths and symbols from published Release binaries.

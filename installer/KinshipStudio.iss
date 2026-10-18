@@ -1,6 +1,6 @@
 ; This identity and installation mode must stay unchanged across releases.
 #ifndef AppVersion
-  #define AppVersion "3.5.1"
+  #define AppVersion "3.5.2"
 #endif
 #ifndef AppId
   #define AppId "KinshipStudio.GhaithSaadJawad"

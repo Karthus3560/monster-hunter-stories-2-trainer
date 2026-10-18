@@ -2,7 +2,7 @@
 
 ## Install once, upgrade the same app
 
-Starting with **v3.5.0**, the recommended download is `KinshipStudio-v3.5.1-Setup.exe`. Run it once to create or adopt the installed copy. It uses the existing per-user `local application-data/Programs/RidersToolkit` folder and the existing **Kinship Studio (Stories 2)** desktop shortcut. Administrator access is not requested.
+Starting with **v3.5.0**, the recommended download is `KinshipStudio-v3.5.2-Setup.exe`. Run it once to create or adopt the installed copy. It uses the existing per-user `local application-data/Programs/RidersToolkit` folder and the existing **Kinship Studio (Stories 2)** desktop shortcut. Administrator access is not requested.
 
 The installer uses the permanent identity `KinshipStudio.GhaithSaadJawad`, the same installation mode and one unversioned Windows installed-app entry. Future installers reuse that identity and folder, update the existing executable and shortcut, and reject downgrades. Do not put a version number in `AppId` or change the install mode in later releases.
 
@@ -16,7 +16,7 @@ Profiles, theme preferences, backups, editor journals and restored-game-data cop
 
 ## Current code signing policy
 
-**The v3.5.1 public release is currently unsigned.** No publicly trusted publisher certificate is provisioned for this project. The update feature works independently of code signing; it does not remove Windows publisher/reputation checks.
+**The v3.5.2 public release is currently unsigned.** No publicly trusted publisher certificate is provisioned for this project. The update feature works independently of code signing; it does not remove Windows publisher/reputation checks.
 
 Creating a self-signed certificate does not make Windows trust the publisher on other computers. This project does not install a custom trusted root or ask users to disable Windows protections. A publicly trusted signature requires an identity-validated certificate/service or acceptance by an approved open-source signing program.
 
