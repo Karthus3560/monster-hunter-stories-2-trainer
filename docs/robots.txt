@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://karthus3560.github.io/monster-hunter-stories-2-trainer/sitemap.xml

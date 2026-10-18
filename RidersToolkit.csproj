@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PlatformTarget>x64</PlatformTarget>
+    <AssemblyName>RidersToolkit</AssemblyName>
+    <Version>3.4.0</Version>
+    <DefaultItemExcludes>$(DefaultItemExcludes);research\**;dist*\**;artifacts\**;docs\**</DefaultItemExcludes>
+    <Product>Kinship Studio</Product>
+    <RepositoryUrl>https://github.com/Karthus3560/monster-hunter-stories-2-trainer</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Title>Kinship Studio</Title>
+    <AssemblyTitle>Kinship Studio</AssemblyTitle>
+    <Authors>Ghaith Saad Jawad</Authors>
+    <Company>Ghaith Saad Jawad</Company>
+    <Description>Monster Hunter Stories 2 trainer by Ghaith Saad Jawad</Description>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>navirou-pixel-v33.ico</ApplicationIcon>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="tests\**" />
+    <Compile Remove="research\**" />
+    <Resource Include="Assets\navirou-pixel-v33.png" />
+    <Resource Include="Assets\hakolo-coast-v34.png" />
+    <Resource Include="Assets\Fonts\Silkscreen-Regular.ttf" />
+    <Resource Include="navirou-pixel-v33.ico" />
+    <Resource Include="Assets\*-labels.json" />
+    <Resource Include="Assets\save-key-seeds.json" />
+    <Resource Include="THIRD-PARTY-NOTICES.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="BouncyCastle.Cryptography" Version="2.6.2" />
+  </ItemGroup>
+</Project>

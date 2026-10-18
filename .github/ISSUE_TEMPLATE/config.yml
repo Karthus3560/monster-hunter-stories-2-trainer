@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Setup and compatibility guide
+    url: https://github.com/Karthus3560/monster-hunter-stories-2-trainer/blob/main/docs/COMPATIBILITY.md
+    about: Check supported builds, overlay modes and save-editing requirements.

@@ -1,0 +1,24 @@
+name: Bug or compatibility report
+description: Report a problem with Kinship Studio.
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: input
+    id: versions
+    attributes:
+      label: Trainer and game versions
+      placeholder: Kinship Studio 3.4.0; Steam Stories 2 1.6.1.0; Windows 11
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: What happened?
+      description: Include enabled controls, expected behavior, actual behavior and steps to reproduce.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots or redacted diagnostics
+      description: Remove private paths/account information. Do not upload personal saves, credentials or process dumps.
