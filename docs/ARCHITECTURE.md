@@ -13,6 +13,7 @@ Kinship Studio is a C# / .NET 10 WPF desktop application, published as a self-co
 | Egg/gene UI | `StableEditorWindow.cs`, `AddEggWindow.cs` |
 | Quick controls and native window helper | `OverlayController.cs`, `OverlayWindow.xaml`, `BorderlessGameWindow.cs` |
 | Appearance and preview rendering | `ThemeManager.cs`, `WindowLayout.cs`, `FeatureCardWidthConverter.cs`, `OwnWindowCapture.cs` |
+| App installation and updates | `AppUpdates.cs`, `AppUpdateWindow.cs`, `installer/KinshipStudio.iss`, `scripts/build.ps1`, `scripts/sign.ps1` |
 | Tests | `*Tests.cs`, `MainWindowAppearanceChecks.cs`, `MainWindowOverlayChecks.cs` |
 
 The production egg editor uses disk saves with the game closed. Legacy/internal live editor code remains for fixture coverage and shared planning; the production UI routes through `OfflineEggEditor`.

@@ -63,6 +63,23 @@ public partial class MainWindow : Window
     }
 
     StableEditorWindow? _studio;
+    AppUpdateWindow? _updatesWindow;
+    void OnAppUpdates(object sender,RoutedEventArgs e)
+    {
+        if(_updatesWindow is not null){WindowLayout.Reveal(_updatesWindow);return;}
+        _updatesWindow=new AppUpdateWindow(this,PrepareAppUpdate,!_autoConnect);
+        _updatesWindow.Closed+=(_,_)=>_updatesWindow=null;
+        WindowLayout.Reveal(_updatesWindow);
+    }
+    internal Window PreviewUpdates(){OnAppUpdates(this,new RoutedEventArgs());return _updatesWindow!;}
+    void PrepareAppUpdate()
+    {
+        if(_changingGameData||_vm.Busy||_connecting)throw new InvalidOperationException("Wait for the current operation to finish before restarting to update.");
+        if(_studio is not null)throw new InvalidOperationException("Finish your work and close Egg Studio before restarting to update.");
+        StopAll();
+        if(_engine.RestorationIssue is {} issue)throw new InvalidOperationException("Live restoration needs attention before updating: "+issue);
+        _automaticConnectionPaused=true;
+    }
     void OnOpenEditor(object sender,RoutedEventArgs e)
     {
         try
@@ -220,6 +237,12 @@ public partial class MainWindow : Window
         _vm.Search="bottle";Check("Search matches titles and descriptions",_vm.VisibleFeatures.Count==2&&_vm.VisibleFeatures.Any(f=>f.Id=="caps")&&_vm.VisibleFeatures.Any(f=>f.Id=="facility"));
         Navigate("Backups");Check("Navigation clears search and shows backups",_vm.Search==""&&_vm.ShowBackups&&!_vm.ShowFeatures);
         Navigate("Profiles");Check("Profiles page",_vm.ShowProfiles);
+        Check("App update control is available without a game connection",AppUpdatesButton.IsVisible&&AppUpdatesButton.IsEnabled);
+        OnAppUpdates(AppUpdatesButton,new RoutedEventArgs());
+        Check("Update preview opens without network or installation",_updatesWindow is {IsVisible:true}&&Descendants<TextBlock>(_updatesWindow).Any(t=>t.Text=="Updates replace the installed app."));
+        var firstUpdate=_updatesWindow;OnAppUpdates(AppUpdatesButton,new RoutedEventArgs());
+        Check("Repeated update clicks reuse the same dialog",ReferenceEquals(firstUpdate,_updatesWindow));
+        _updatesWindow?.Close();
         Navigate("Research");Check("Editor page is separate from automatic switches",_vm.ShowResearch&&!_vm.ShowFeatures);
         Check("Sidebar opens offline Egg Studio directly without connecting to the game",_studio is {IsVisible:true}&&_engine.Pid==0);
         var firstStudio=_studio;

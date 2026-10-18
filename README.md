@@ -36,12 +36,16 @@ Open the **Alt+W** quick panel while playing, tune movement and rewards, then re
 
 ## Quick start
 
-1. Download **`KinshipStudio-v3.4.0-Windows-x64.zip`** from [Releases](https://github.com/Karthus3560/monster-hunter-stories-2-trainer/releases/latest).
-2. Extract the ZIP to a normal folder. Run **`RidersToolkit.exe`** — the executable keeps its original internal name for compatibility.
+1. Download **`KinshipStudio-v3.5.0-Setup.exe`** from [Releases](https://github.com/Karthus3560/monster-hunter-stories-2-trainer/releases/latest).
+2. Run Setup once. It installs or upgrades the existing **Kinship Studio** app and desktop shortcut. It keeps one installation across versions; administrator access is not needed. The internal executable remains `RidersToolkit.exe`.
 3. Start Stories 2 from Steam or use **Launch game**. Load a solo save; the trainer connects automatically.
 4. Switch on the controls you want. Open quick controls with **Alt+W**. **F12** stops live maintenance controls.
 
-The Windows release is self-contained: a separate .NET runtime is not needed. Building the source requires the .NET 10 SDK.
+The Windows release is self-contained: a separate .NET runtime is not needed. **Profiles & hotkeys → Check for updates** downloads a verified installer and offers **Restart & update**. Profiles, theme and backups are preserved. The portable ZIP is also available for manual use.
+
+**Code signing:** the release is still unsigned. Updates work independently of signing. A publicly trusted publisher signature requires an identity-validated certificate or approved service; self-signing would not make other PCs trust it. Read [updates and code signing](docs/UPDATES-AND-SIGNING.md). Building the source requires the .NET 10 SDK.
+
+![App update dialog preview: one installed app with preserved settings](docs/screenshots/app-updates.png)
 
 For the overlay, use **Windowed**, or Windowed plus **Borderless fullscreen** in the trainer. **True exclusive fullscreen is not supported.** Alt+W closes the panel; its close button also returns to the game. Esc closes it while the panel has keyboard focus.
 
@@ -70,8 +74,8 @@ The UI pairs a readable white workspace or navy night theme with original pixel 
 
 ## Validation & transparency
 
-- **100 engine checks + 120 interface checks** passed on the author's supported installation for v3.4.0. The author has also confirmed gameplay operation; that is one tested setup, not a claim of universal compatibility.
-- The public Windows CI workflow builds the app and runs **95 portable engine checks**. Five installed-archive checks are explicitly skipped there; copyrighted game archives are not supplied to CI. A hosted CI pass is not claimed for this release: the first hosted job did not start. Check [Actions](https://github.com/Karthus3560/monster-hunter-stories-2-trainer/actions) for current status.
+- **110 engine checks + 123 interface checks + 11 installer checks** passed on the author's supported installation for v3.5.0. The author has also confirmed gameplay operation; that is one tested setup, not a claim of universal compatibility.
+- The public Windows CI workflow builds the app and runs **105 portable engine checks**. Five installed-archive checks are explicitly skipped there; copyrighted game archives are not supplied to CI. A hosted CI pass is not claimed for this release: the first hosted job did not start. Check [Actions](https://github.com/Karthus3560/monster-hunter-stories-2-trainer/actions) for current status.
 - UI checks cover the real font/assets, theme persistence, compact/wide card placement, editor opening, backup gates, overlay focus behavior and native test windows. They do not prove visibility over an exclusive DirectX surface.
 - This repository ships source and original UI assets, **not game archives, save files, downloaded trainers or private process dumps**.
 
@@ -87,7 +91,7 @@ cd monster-hunter-stories-2-trainer
 pwsh ./scripts/build.ps1
 ```
 
-The script builds a self-contained Windows x64 release, runs portable checks, and writes a ZIP and SHA-256 checksum under `artifacts/`. For the full installed-game and interface checks, use `pwsh ./scripts/build.ps1 -FullTests -UiTests` with a supported local installation and the game closed.
+The script builds a self-contained Windows x64 release, runs portable checks, and writes a ZIP and SHA-256 checksum under `artifacts/`. Add `-Installer` with Inno Setup 6.7+ installed to produce the upgrade-aware Setup executable. `pwsh ./scripts/test-installer.ps1` checks install/upgrade/reinstall/downgrade behavior using an isolated identity and folder. For the full installed-game and interface checks, use `pwsh ./scripts/build.ps1 -FullTests -UiTests` with a supported local installation and the game closed.
 
 ## Credits & license
 

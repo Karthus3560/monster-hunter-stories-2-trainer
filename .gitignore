@@ -26,3 +26,9 @@ GameData/
 *-report.txt
 *-report.json
 !docs/validation/*.txt
+Updates/
+*.pfx
+*.p12
+*.key
+*.pvk
+signing-local*

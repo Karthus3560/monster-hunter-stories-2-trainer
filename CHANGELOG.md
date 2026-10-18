@@ -1,5 +1,14 @@
 # Changelog
 
+## 3.5.0 — install once, update in place
+
+- Per-user Setup installer adopts the existing app folder and shortcut, reuses one permanent Windows app identity and refuses downgrades.
+- Profiles & hotkeys → Check for updates offers explicit download and restart, using exact project assets, bounded downloads and SHA-256 verification.
+- Profiles, theme and save backups stay separate from installed program files.
+- Windows SDK signing support is prepared for an issuer-provisioned certificate, covering app, installer and uninstaller. Public files are still unsigned until that certificate/service exists.
+- 110 engine checks, 123 UI checks and 11 isolated installer checks passed locally; portable engine coverage is now 105 checks.
+
+
 ## 3.4.0 — first public release
 
 - Public MIT-licensed C# / WPF source, Windows x64 download and build instructions.

@@ -26,6 +26,8 @@ internal static class SelfTests
     public static int Run(bool portable=false)
     {
         _portable=portable;_failures=0;_skipped=0;Results.Clear();
+        // These tests exercise asynchronous file I/O; do not block its continuations on WPF's startup dispatcher.
+        Task.Run(()=>AppUpdateTests.Run(Check)).GetAwaiter().GetResult();
         ModifierTests.Run(Check);
         AdventureTests.Run(Check);
         BorderlessWindowTests.Run(Check);

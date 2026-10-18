@@ -69,6 +69,7 @@ public partial class App : Application
                     if(pageIndex>=0&&e.Args.Length>pageIndex+1)popup.SelectCategory(e.Args[pageIndex+1]);
                 }
                 if(e.Args.Contains("--studio"))preview=window.PreviewStudio();
+                if(e.Args.Contains("--updates"))preview=window.PreviewUpdates();
                 if(e.Args.Contains("--add-egg"))preview=window.PreviewAddEgg();
                 preview.UpdateLayout();
                 await Task.Delay(160); // Let resource images complete their first render in a newly opened popup.

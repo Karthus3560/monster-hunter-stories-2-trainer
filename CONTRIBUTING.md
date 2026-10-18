@@ -6,6 +6,8 @@ Bug reports, build fixes, UI improvements and carefully verified game compatibil
 
 Use Windows x64, PowerShell 7 and the .NET 10 SDK. Run `pwsh ./scripts/build.ps1`. It publishes a self-contained app and runs portable engine checks. Add `-FullTests -UiTests` only with the inspected game installed and closed.
 
+For installer builds, install Inno Setup 6.7+ and add `-Installer`. Run `pwsh ./scripts/test-installer.ps1` for isolated upgrade checks. Preserve the permanent AppId, per-user install mode, unversioned app folder and shortcut. See [updates and signing](docs/UPDATES-AND-SIGNING.md).
+
 ## Changes worth reviewing
 
 - Describe the player-visible behavior and the supported game build.
