@@ -71,7 +71,7 @@ The UI pairs a readable white workspace or navy night theme with original pixel 
 ## Validation & transparency
 
 - **100 engine checks + 120 interface checks** passed on the author's supported installation for v3.4.0. The author has also confirmed gameplay operation; that is one tested setup, not a claim of universal compatibility.
-- Public Windows CI builds the app and runs **95 portable engine checks**. Five installed-archive checks are explicitly skipped there; copyrighted game archives are not supplied to CI.
+- The public Windows CI workflow builds the app and runs **95 portable engine checks**. Five installed-archive checks are explicitly skipped there; copyrighted game archives are not supplied to CI. A hosted CI pass is not claimed for this release: the first hosted job did not start. Check [Actions](https://github.com/Karthus3560/monster-hunter-stories-2-trainer/actions) for current status.
 - UI checks cover the real font/assets, theme persistence, compact/wide card placement, editor opening, backup gates, overlay focus behavior and native test windows. They do not prove visibility over an exclusive DirectX surface.
 - This repository ships source and original UI assets, **not game archives, save files, downloaded trainers or private process dumps**.
 

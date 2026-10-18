@@ -8,6 +8,8 @@ Portable coverage includes guarded memory maintenance/restoration, movement, rew
 
 The five excluded checks concern workshop/archive rebuilding, all-entry archive/schema preservation, rainbow/rare-only generation settings, luck install/update/recovery on copies and installed item metadata. They need data from a legitimate local game installation. The `SKIP` lines remain in the report; skipped checks are not counted as passes.
 
+The workflow is included under `.github/workflows/build.yml`. At first publication, the hosted Windows job did not start; a successful hosted run is not claimed. See [Actions](https://github.com/Karthus3560/monster-hunter-stories-2-trainer/actions) for current status. The local results below are separate from hosted CI.
+
 ## Full local validation
 
 With the supported game installed and closed:
