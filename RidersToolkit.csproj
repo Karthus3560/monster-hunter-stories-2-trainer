@@ -7,7 +7,7 @@
     <Nullable>enable</Nullable>
     <PlatformTarget>x64</PlatformTarget>
     <AssemblyName>RidersToolkit</AssemblyName>
-    <Version>3.5.0</Version>
+    <Version>3.5.1</Version>
     <DefaultItemExcludes>$(DefaultItemExcludes);research\**;dist*\**;artifacts\**;docs\**</DefaultItemExcludes>
     <Product>Kinship Studio</Product>
     <RepositoryUrl>https://github.com/Karthus3560/monster-hunter-stories-2-trainer</RepositoryUrl>
@@ -20,6 +20,11 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <ApplicationIcon>navirou-pixel-v33.ico</ApplicationIcon>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <PathMap>$(MSBuildProjectDirectory)=/_/KinshipStudio</PathMap>
   </PropertyGroup>
   <ItemGroup>
     <Compile Remove="tests\**" />

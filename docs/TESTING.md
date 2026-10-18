@@ -18,7 +18,7 @@ With the supported game installed and closed:
 pwsh ./scripts/build.ps1 -FullTests -UiTests
 ```
 
-For v3.5.0, the author ran **110/110 engine checks and 123/123 UI checks**. UI checks use preview windows, not live writes to the game. They cover editor opening/reopening, backup gates, light/night updates, assets/font loading, caption-color API acceptance, responsive card layout, control bounds, overlay hotkeys/focus logic and native topmost/borderless test windows.
+For v3.5.1, the author ran **110/110 engine checks and 123/123 UI checks**. UI checks use preview windows, not live writes to the game. They cover editor opening/reopening, backup gates, light/night updates, assets/font loading, caption-color API acceptance, responsive card layout, control bounds, overlay hotkeys/focus logic and native topmost/borderless test windows.
 
 Automated checks are not a substitute for gameplay observation on another game build. The author's gameplay confirmation and exact supported version are documented separately from synthetic/native-window checks.
 

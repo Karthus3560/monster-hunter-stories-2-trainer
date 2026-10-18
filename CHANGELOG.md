@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.5.1 — release packaging
+
+- Remove developer debug paths and symbols from published Release binaries.
+- Keep the same installer identity, app folder, settings and update flow.
+
+
 ## 3.5.0 — install once, update in place
 
 - Per-user Setup installer adopts the existing app folder and shortcut, reuses one permanent Windows app identity and refuses downgrades.
