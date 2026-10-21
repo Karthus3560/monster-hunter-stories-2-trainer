@@ -37,3 +37,10 @@ signing-local*
 *.prompt
 *.prompt.*
 private-artwork/
+
+# Local organization shortcuts; never include personal paths in releases.
+/Workspace/
+
+# Local release executables are published as GitHub Release assets.
+/releases/
+/native/out/

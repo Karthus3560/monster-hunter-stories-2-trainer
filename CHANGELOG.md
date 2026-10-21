@@ -1,3 +1,19 @@
+# Native Studio Launcher 1.1.0 — 21 October 2026
+
+- New self-contained Windows launcher with Steam detection, Browse and normal game startup.
+- Automatically waits for verified menu readiness and loads native Studio plus the custom Camp icon.
+- Native Camp integration with eight centered tabs, 29 gameplay controls and five Main shortcuts.
+- Reset all with confirmation; settings restoration, five profiles and verified save-backup controls.
+- Separate gathering, battle loot, ordinary chest, EXP and earned Zenny multipliers.
+- Egg Hunt presets and crafting-material preservation, within the limits in the main guide.
+- New per-user installer, update/repair and owned-file uninstall; personal settings and backups preserved.
+- A supported already running session can be adopted without duplicate hooks.
+- No game-local input DLL replacement or permanent Windows-startup watcher.
+
+This is the native launcher product line; the desktop trainer's 3.x version numbers are separate. Existing desktop releases remain available.
+
+---
+
 # Changelog
 
 ## 3.5.2 â€” public documentation cleanup

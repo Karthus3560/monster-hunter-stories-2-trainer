@@ -1,0 +1,31 @@
+name: Native Studio launcher build
+on:
+  push:
+    branches: [main]
+    paths: ['native/**', '.github/workflows/native-build.yml']
+  pull_request:
+    paths: ['native/**', '.github/workflows/native-build.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  native:
+    runs-on: windows-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - name: Install .NET 10 SDK
+        uses: actions/setup-dotnet@a98b56852c35b8e3190ac28c8c2271da59106c68
+        with:
+          dotnet-version: 10.0.x
+      - name: Build native modules, run checks and publish launcher
+        shell: pwsh
+        run: ./native/build.ps1
+      - name: Upload self-contained launcher payload
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+        with:
+          name: KinshipStudio-Native-Launcher-Windows-x64
+          path: native/out/payload/
+          if-no-files-found: error
+          retention-days: 14

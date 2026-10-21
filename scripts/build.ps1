@@ -28,7 +28,7 @@ $uiReport=Join-Path $output 'ui-test-report.txt'
 if($UiTests){Copy-Item -LiteralPath (Join-Path $storage 'ui-test-report.txt') -Destination $uiReport}
 elseif(Test-Path -LiteralPath $uiReport){Remove-Item -LiteralPath $uiReport}
 foreach($name in @('LICENSE','THIRD-PARTY-NOTICES.md','navirou-pixel-v33.ico')){Copy-Item -LiteralPath (Join-Path $projectRoot $name) -Destination $output}
-Copy-Item -LiteralPath (Join-Path $projectRoot 'docs/QUICKSTART.md') -Destination (Join-Path $output 'README.md')
+Copy-Item -LiteralPath (Join-Path $projectRoot 'docs/DESKTOP-QUICKSTART.md') -Destination (Join-Path $output 'README.md')
 $files=@('RidersToolkit.exe','README.md','LICENSE','THIRD-PARTY-NOTICES.md','navirou-pixel-v33.ico','engine-test-report.txt')
 if($UiTests){$files+='ui-test-report.txt'}
 $archive=Join-Path $artifacts "KinshipStudio-v$version-Windows-x64.zip"

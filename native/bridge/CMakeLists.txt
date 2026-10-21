@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.20)
+project(KinshipLoadBridge LANGUAGES C)
+add_library(KinshipLoadBridge SHARED bridge.c)
+target_compile_options(KinshipLoadBridge PRIVATE /W4 /GS-)
+target_link_options(KinshipLoadBridge PRIVATE /NODEFAULTLIB /ENTRY:DllMain)
+target_link_libraries(KinshipLoadBridge PRIVATE kernel32)

@@ -2,7 +2,11 @@
 
 Bug reports, build fixes, UI improvements and carefully verified game compatibility work are welcome.
 
-## Build
+## Native Studio and launcher
+
+The current in-game release is under [`native/`](native/README.md). Use Windows x64, .NET 10 SDK, CMake and Visual Studio C++ Build Tools. `pwsh ./native/build.ps1 -Installer` builds the modules, runs checks and creates a self-contained payload and optional setup. Close the game and launcher before policy tests. See the native README for details.
+
+## Older desktop trainer build
 
 Use Windows x64, PowerShell 7 and the .NET 10 SDK. Run `pwsh ./scripts/build.ps1`. It publishes a self-contained app and runs portable engine checks. Add `-FullTests -UiTests` only with the inspected game installed and closed.
 

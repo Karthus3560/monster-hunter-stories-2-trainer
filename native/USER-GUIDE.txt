@@ -1,0 +1,33 @@
+KINSHIP STUDIO — STORIES 2 LAUNCHER 1.1.0
+Created by Ghaith Saad Jawad
+
+PLAY
+Open the Kinship Studio — Stories 2 shortcut and choose Play with Studio.
+The launcher finds Steam installations; Browse can select another game folder.
+It starts the game normally, waits for its menus, then loads both Studio and
+the custom Camp icon. Open Camp, page 2, then Kinship Studio.
+If the game is already open, Play with Studio connects to that game instead.
+Game only opens Stories 2 through Steam without loading Studio into a new game.
+
+YOUR OPTIONS
+The in-game Inventory tab contains settings profiles and save backups.
+Current saved options are restored when Restore last settings is enabled.
+Restores of save backups happen only after exiting the game and make a safety
+backup first. Wait for Steam Cloud to finish syncing before starting again.
+The launcher can close after loading; its backup helper exits with the game.
+No Windows-startup application or input-library replacement is installed.
+
+UPDATE AND REMOVE
+Close the game and launcher before installing a new version or uninstalling.
+Run setup again to update, or remove Kinship Studio — Stories 2 through Windows
+Installed apps. Personal settings, profiles and backups are preserved.
+This is separate from the older desktop trainer. Do not run both together.
+An older failed in-game startup package is removed during installation when found.
+Earlier archive modifications made by other tools remain separate.
+
+SUPPORT
+The exact supported game executable is checked before loading any mods.
+Keep all files supplied by setup together. If loading fails, use Help / logs.
+Shared settings and backups: %LOCALAPPDATA%\KinshipStudioNative\data
+Verified session files: %USERPROFILE%\Kinship Studio Runtime
+No game executable, original game archives or saves are included or replaced.

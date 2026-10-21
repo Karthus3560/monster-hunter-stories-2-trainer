@@ -1,102 +1,65 @@
-<p align="center"><img src="docs/assets/navirou-pixel-v33.png" width="88" alt="Pixel Navirou mascot" /></p>
+<p align="center"><img src="docs/assets/studio-emblem.png" width="88" alt="Kinship Studio emblem" /></p>
 
-# Kinship Studio — Monster Hunter Stories 2 Trainer & Save Editor
+# Kinship Studio — Your hunt. Your pace.
 
-<p align="center"><strong>Your hunt. Your pace. Your perfect Monstie.</strong><br />A free, open-source Windows trainer for <em>Monster Hunter Stories 2: Wings of Ruin</em>, with an in-game quick panel and an offline Egg & Gene Studio.<br /><strong>Created by Ghaith Saad Jawad.</strong></p>
+A native **Camp-menu mod for Monster Hunter Stories 2: Wings of Ruin**, with a Windows launcher that finds Steam, starts the game normally and loads Studio automatically.
 
-<p align="center">
-<a href="https://github.com/Karthus3560/monster-hunter-stories-2-trainer/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/Karthus3560/monster-hunter-stories-2-trainer?color=126d79&style=flat-square" /></a>
-<a href="LICENSE"><img alt="MIT license" src="https://img.shields.io/badge/License-MIT-2a5266?style=flat-square" /></a>
-<img alt="Windows x64" src="https://img.shields.io/badge/Windows-x64-142c43?style=flat-square" />
-<img alt="Inspected game version 1.6.1.0" src="https://img.shields.io/badge/Stories_2-1.6.1.0-a44733?style=flat-square" />
-<a href="https://github.com/Karthus3560/monster-hunter-stories-2-trainer/actions/workflows/build.yml"><img alt="Windows build" src="https://github.com/Karthus3560/monster-hunter-stories-2-trainer/actions/workflows/build.yml/badge.svg" /></a>
-</p>
+**Created by Ghaith Saad Jawad.** Free and open source under the MIT license.
 
-<p align="center"><a href="https://github.com/Karthus3560/monster-hunter-stories-2-trainer/releases/latest"><strong>Download for Windows</strong></a> &nbsp; · &nbsp; <a href="https://karthus3560.github.io/monster-hunter-stories-2-trainer/">Project website</a> &nbsp; · &nbsp; <a href="#quick-start">Quick start</a> &nbsp; · &nbsp; <a href="#egg--gene-studio">Egg & Gene Studio</a> &nbsp; · &nbsp; <a href="CONTRIBUTING.md">Build from source</a></p>
+[**Download the Windows installer**](https://github.com/Karthus3560/monster-hunter-stories-2-trainer/releases/download/studio-v1.1.0/KinshipStudio-Launcher-1.1.0-Setup.exe) · [**Visit the website**](https://karthus3560.github.io/monster-hunter-stories-2-trainer/) · [Release notes](https://github.com/Karthus3560/monster-hunter-stories-2-trainer/releases/tag/studio-v1.1.0) · [Build from source](native/README.md)
 
-![Kinship Studio: white and navy interface, pixel-art Monster Hunter scenery, battle controls, damage and EXP sliders](docs/screenshots/battle-light.png)
+![Kinship Studio Main tab inside the game's native Options interface](docs/screenshots/studio-main.png)
 
-## Less grinding. More adventure.
+## Install once. Then play.
 
-Kinship Studio brings **31 live gameplay controls**, rainbow egg and den settings, verified save backups, and an offline egg/gene editor into one native desktop app. Steam detection and automatic connection replace manual address searches. **No Cheat Engine installation or subscription is required.**
+1. Close Stories 2 and download **KinshipStudio-Launcher-1.1.0-Setup.exe** from the release above.
+2. Run Setup, then open **Kinship Studio - Play Stories 2** from your desktop.
+3. Choose **Play with Studio**. It finds the Steam installation, launches the game and waits for verified menu readiness. Use Browse if needed.
+4. Open **Camp → page 2 → Kinship Studio** in a solo game.
 
-Open the **Alt+W** quick panel while playing, tune movement and rewards, then return to the hunt. When the game is closed, create unhatched eggs—even in an empty carton—and arrange genes in a visual 3 × 3 board.
+Windows x64 and the supported Steam game build **1.6.1** are required. No Cheat Engine, Python, separate .NET installation or account is needed. The launcher checks the exact executable and refuses unsupported versions.
 
-| Play your way | What you can do |
+![Kinship Studio launcher with game detection and Play with Studio](docs/screenshots/studio-launcher.png)
+
+## Inside Studio
+
+| Tab | Controls |
 | --- | --- |
-| **Make battles yours** | Rider and Monstie health, persistent Kinship, party hearts, damage multiplier, damage-taken slider, enemy HP, turn count, maximum Kinship attack level and battle fast-forward. |
-| **Make every trip count** | 100% retreat for eligible monsters, loaded map markers, 4× gathering range, faster manual gathering, auto-collect and selectable Prayer Pot effects. |
-| **Move at your pace** | Independent walking/running, mounted, flying, swimming and egg-carrying speed sliders, with Reset controls. |
-| **Skip the repetitive grind** | Battle EXP multiplier, 2×/5×/10× loot, Zenny, Bottle Caps, owned item/material stacks, and ordinary battle/field item preservation. |
-| **Make the nest shine** | Rainbow egg quality, rare-den settings, no empty egg pulls, plus free crafting/forging and level-one gene requirements. |
-| **Build your Monstie** | Add unhatched eggs, choose egg species, copy eggs, edit genes/stars/locks, place Rainbow Genes and rearrange the gene board. |
-| **Keep it comfortable** | Alt+W quick panel, F12 stop-all, saved profiles, editable hotkeys, light/night themes and compact window layouts. |
+| **Main** | Five shortcuts for everyday controls; Reset all with confirmation. |
+| **Survival** | Rider/buddy health, allied Monstie health, party hearts and incoming damage. |
+| **Power** | Attack, Kinship, mounted Kinship attack level, battle speed and turn counter. |
+| **Movement** | Walking/running, ground riding, flying, swimming and egg-carrying speeds. |
+| **Exploration** | Radar, gathering range, faster manual gathering, eligible retreat and Prayer Pot effects. |
+| **Rewards** | Separate Battle EXP, gathering, monster loot, ordinary chest items and earned Zenny multipliers. |
+| **Inventory** | Ordinary battle-item and crafting-material preservation; settings, five profiles and save backups. |
+| **Egg Hunt** | Egg-quality and den-rarity presets; prevention of empty solo egg pulls. |
 
-**Single-player Steam build:** inspected against **1.6.1.0**. Retreat rules, story restrictions and unlocked riding abilities still matter. Incompatible layouts are refused rather than guessed. See [compatibility and feature details](docs/COMPATIBILITY.md).
+![Rewards tab with separate gathering and battle loot multipliers](docs/screenshots/studio-rewards.png)
 
-## Quick start
+The game’s fonts, navigation and controller flow are retained, with a custom Camp emblem and centered category tabs. Controls start at Off/Normal on a fresh installation. **Restore last settings** can bring your saved choices back on the next launch.
 
-1. Download **`KinshipStudio-v3.5.2-Setup.exe`** from [Releases](https://github.com/Karthus3560/monster-hunter-stories-2-trainer/releases/latest).
-2. Run Setup once. It installs or upgrades the existing **Kinship Studio** app and desktop shortcut. It keeps one installation across versions; administrator access is not needed. The internal executable remains `RidersToolkit.exe`.
-3. Start Stories 2 from Steam or use **Launch game**. Load a solo save; the trainer connects automatically.
-4. Switch on the controls you want. Open quick controls with **Alt+W**. **F12** stops live maintenance controls.
+## Settings and backups
 
-The Windows release is self-contained: a separate .NET runtime is not needed. **Profiles & hotkeys → Check for updates** downloads a verified installer and offers **Restart & update**. Profiles, theme and backups are preserved. The portable ZIP is also available for manual use.
+Profiles and backup screens are under **Inventory**. Save restores are queued until the game exits, verified, and preceded by a safety backup. Personal data lives in `%LOCALAPPDATA%\KinshipStudioNative\data`; verified session files live in `%USERPROFILE%\Kinship Studio Runtime`.
 
-**Code signing:** the release is still unsigned. Updates work independently of signing. A publicly trusted publisher signature requires an identity-validated certificate or approved service; self-signing would not make other PCs trust it. Read [updates and code signing](docs/UPDATES-AND-SIGNING.md). Building the source requires the .NET 10 SDK.
+Close the game and launcher before updating or uninstalling. Rerun Setup to update/repair, or remove the launcher through Windows Installed apps. Settings, profiles and backups are preserved.
 
-![App update dialog preview: one installed app with preserved settings](docs/screenshots/app-updates.png)
+## What to expect
 
-For the overlay, use **Windowed**, or Windowed plus **Borderless fullscreen** in the trainer. **True exclusive fullscreen is not supported.** Alt+W closes the panel; its close button also returns to the game. Esc closes it while the panel has keyboard focus.
+- Use this mod in single player. The exact supported executable SHA-256 is `AC73BBA1019F09DE83CA8466C4856B3937E9D63972F5FBCA2BCBC670437B7DA9`.
+- Dens and eggs use the selected presets when newly generated. Regenerate the area for new dens. Existing/carried eggs stay unchanged; rainbow glow does not guarantee a Rainbow Gene. Story and unlock restrictions still apply.
+- Crafting preservation still requires the ingredients and charges Zenny. Battle-item preservation does not cover all field/camp items or nutriments.
+- The launcher can attach to an already running supported game. It refuses duplicate or partial sessions; if a loading attempt fails, restart the game before retrying.
+- This release is **unsigned**. Download from this repository's Releases; `SHA256SUMS.txt` is supplied for verification. The website does not require an account or collect telemetry.
 
-### Rainbow eggs and rare dens
+## The older desktop trainer
 
-With Stories 2 closed, open **Hunt & workshop**, choose a preset, and apply it before launching. These settings change generation tables and affect **freshly generated** eggs/dens. The original archive and saves are backed up first. **Restore original game data** reverses these table changes; F12 stops memory controls but does not uninstall table settings.
+The previous **v3.5.2 desktop trainer and offline Egg & Gene Studio** are a separate application. They remain in [earlier releases](https://github.com/Karthus3560/monster-hunter-stories-2-trainer/releases/tag/v3.5.2), with a [desktop guide](docs/DESKTOP-TRAINER.md). Don’t run the two apps together. Advanced desktop editors are not part of this native release. Archive changes previously made by the old tool remain separate and must be managed by that tool.
 
-### Egg & Gene Studio
+## Source and validation
 
-With the game **closed**:
+The current launcher, native modules, clean assets, installer and Windows build script are in [`native/`](native/README.md). Historical desktop source stays at the repository root. The native release passed gameplay and menu checks, launcher checks, actual installer install/update/uninstall fixtures, and a real Steam launch with both modules. The developer's live in-game test confirmed successful startup; this does not establish every preset or edge case.
 
-1. Open **Egg & gene studio**, choose a manual slot, then **Open save**.
-2. Choose a saved Monstie/egg to edit, or **Add egg… → New egg** to start from an empty carton.
-3. Preview the changes. Apply/Add writes the selected save only after a fresh verified backup.
-4. Launch the game and load that same manual slot.
+[Report an issue](https://github.com/Karthus3560/monster-hunter-stories-2-trainer/issues) with your game version, launcher message and reproduction steps. Do not attach saves, tokens or private logs without reviewing their contents.
 
-The editor handles manual slots **1–3**, preserves the save's existing encryption identity, updates checksums, verifies re-encryption and replaces the file atomically. **Every Apply, Add and Undo creates a fresh verified backup.** Concurrent file changes and a running game block writes. Undo requires the opened save to still match the last edit. Autosave/system files are not edited by Egg Studio. New eggs start with normal quality and species starter genes; the studio's Rainbow Gene button and the hunt's rainbow egg-quality preset are separate features.
-
-![Offline Egg & Gene Studio: save selection and nine gene slots](docs/screenshots/egg-gene-studio.png)
-
-## Built for the way you actually play
-
-<table><tr><td width="56%"><strong>Moonlit hunt</strong><br /><img src="docs/screenshots/battle-night.png" alt="Dark navy Moonlit hunt theme" /></td><td width="44%"><strong>Quick controls · Alt+W</strong><br /><img src="docs/screenshots/overlay.png" alt="Compact overlay with movement sliders" /></td></tr></table>
-
-The UI pairs a readable white workspace or navy night theme with original pixel artwork, a pixel Navirou mascot, and licensed Silkscreen display typography. Standard minimize/maximize/close buttons, desktop fitting, two-column/one-column control layouts and keyboard focus remain available. Your theme choice is remembered.
-
-## Validation & transparency
-
-- **110 engine checks + 123 interface checks** passed on the author's supported installation for v3.5.2. The author has also confirmed gameplay operation; that is one tested setup, not a claim of universal compatibility.
-- The public Windows CI build for v3.5.2 **passed 105 portable engine checks and 11 installer checks**, including installation, upgrades, reinstalls and downgrade rejection. Five installed-archive checks are explicitly skipped there; copyrighted game archives are not supplied to CI. [View the successful hosted build](https://github.com/Karthus3560/monster-hunter-stories-2-trainer/actions/runs/39087503159).
-- UI checks cover the real font/assets, theme persistence, compact/wide card placement, editor opening, backup gates, overlay focus behavior and native test windows. They do not prove visibility over an exclusive DirectX surface.
-- This repository ships source and original UI assets, **not game archives, save files, downloaded trainers or private process dumps**.
-
-[Testing guide](docs/TESTING.md) · [Source architecture](docs/ARCHITECTURE.md) · [Third-party notices](THIRD-PARTY-NOTICES.md) · [Report an issue](https://github.com/Karthus3560/monster-hunter-stories-2-trainer/issues/new/choose)
-
-## Build it yourself
-
-On Windows with the **.NET 10 SDK** and PowerShell 7:
-
-```powershell
-git clone https://github.com/Karthus3560/monster-hunter-stories-2-trainer.git
-cd monster-hunter-stories-2-trainer
-pwsh ./scripts/build.ps1
-```
-
-The script builds a self-contained Windows x64 release, runs portable checks, and writes a ZIP and SHA-256 checksum under `artifacts/`. Add `-Installer` with Inno Setup 6.7+ installed to produce the upgrade-aware Setup executable. `pwsh ./scripts/test-installer.ps1` checks install/upgrade/reinstall/downgrade behavior using an isolated identity and folder. For the full installed-game and interface checks, use `pwsh ./scripts/build.ps1 -FullTests -UiTests` with a supported local installation and the game closed.
-
-## Credits & license
-
-**Created by Ghaith Saad Jawad.** Source code is available under the [MIT license](LICENSE). Existing third-party components keep their own licenses; see [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
-
-Monster Hunter, Monster Hunter Stories 2, Rathalos and Navirou belong to Capcom. This is an **unofficial community project**, with no Capcom affiliation or endorsement. Research references and the Silkscreen font license are recorded in the notices. The MIT license does not grant ownership of Capcom's characters or trademarks.
-
-If this makes your next hunt better, a GitHub star helps other Riders find it. Contributions, bug reports and compatibility notes are welcome.
+This is an independent fan project, not affiliated with or endorsed by Capcom. Monster Hunter and game imagery belong to their respective owners. See [LICENSE](LICENSE) and [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
