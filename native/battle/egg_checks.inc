@@ -58,4 +58,3 @@ void eggChecks(){
  eggs.restoreOwned();require(u(first+0x6c)==100,"rebound resource restores its own captured archive baseline");
  eggs.restoreOwned();dens.restoreOwned();VirtualFree(reinterpret_cast<void*>(world),0,MEM_RELEASE);image=priorImage;
 }
-

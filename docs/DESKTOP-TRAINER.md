@@ -7,14 +7,14 @@
 <p align="center"><strong>Your hunt. Your pace. Your perfect Monstie.</strong><br />A free, open-source Windows trainer for <em>Monster Hunter Stories 2: Wings of Ruin</em>, with an in-game quick panel and an offline Egg & Gene Studio.<br /><strong>Created by Ghaith Saad Jawad.</strong></p>
 
 <p align="center">
-<a href="https://github.com/Karthus3560/monster-hunter-stories-2-trainer/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/Karthus3560/monster-hunter-stories-2-trainer?color=126d79&style=flat-square" /></a>
+<a href="https://github.com/Karthus3560/monster-hunter-stories-2-trainer/releases/tag/v3.5.2"><img alt="Latest release" src="https://img.shields.io/github/v/release/Karthus3560/monster-hunter-stories-2-trainer?color=126d79&style=flat-square" /></a>
 <a href="LICENSE"><img alt="MIT license" src="https://img.shields.io/badge/License-MIT-2a5266?style=flat-square" /></a>
 <img alt="Windows x64" src="https://img.shields.io/badge/Windows-x64-142c43?style=flat-square" />
 <img alt="Inspected game version 1.6.1.0" src="https://img.shields.io/badge/Stories_2-1.6.1.0-a44733?style=flat-square" />
 <a href="https://github.com/Karthus3560/monster-hunter-stories-2-trainer/actions/workflows/build.yml"><img alt="Windows build" src="https://github.com/Karthus3560/monster-hunter-stories-2-trainer/actions/workflows/build.yml/badge.svg" /></a>
 </p>
 
-<p align="center"><a href="https://github.com/Karthus3560/monster-hunter-stories-2-trainer/releases/latest"><strong>Download for Windows</strong></a> &nbsp; · &nbsp; <a href="https://karthus3560.github.io/monster-hunter-stories-2-trainer/">Project website</a> &nbsp; · &nbsp; <a href="#quick-start">Quick start</a> &nbsp; · &nbsp; <a href="#egg--gene-studio">Egg & Gene Studio</a> &nbsp; · &nbsp; <a href="CONTRIBUTING.md">Build from source</a></p>
+<p align="center"><a href="https://github.com/Karthus3560/monster-hunter-stories-2-trainer/releases/tag/v3.5.2"><strong>Download for Windows</strong></a> &nbsp; · &nbsp; <a href="https://karthus3560.github.io/monster-hunter-stories-2-trainer/">Project website</a> &nbsp; · &nbsp; <a href="#quick-start">Quick start</a> &nbsp; · &nbsp; <a href="#egg--gene-studio">Egg & Gene Studio</a> &nbsp; · &nbsp; <a href="../CONTRIBUTING.md">Build from source</a></p>
 
 ![Kinship Studio: white and navy interface, pixel-art Monster Hunter scenery, battle controls, damage and EXP sliders](screenshots/battle-light.png)
 
@@ -34,18 +34,18 @@ Open the **Alt+W** quick panel while playing, tune movement and rewards, then re
 | **Build your Monstie** | Add unhatched eggs, choose egg species, copy eggs, edit genes/stars/locks, place Rainbow Genes and rearrange the gene board. |
 | **Keep it comfortable** | Alt+W quick panel, F12 stop-all, saved profiles, editable hotkeys, light/night themes and compact window layouts. |
 
-**Single-player Steam build:** inspected against **1.6.1.0**. Retreat rules, story restrictions and unlocked riding abilities still matter. Incompatible layouts are refused rather than guessed. See [compatibility and feature details](docs/COMPATIBILITY.md).
+**Single-player Steam build:** inspected against **1.6.1.0**. Retreat rules, story restrictions and unlocked riding abilities still matter. Incompatible layouts are refused rather than guessed. See [compatibility and feature details](COMPATIBILITY.md).
 
 ## Quick start
 
-1. Download **`KinshipStudio-v3.5.2-Setup.exe`** from [Releases](https://github.com/Karthus3560/monster-hunter-stories-2-trainer/releases/latest).
+1. Download **`KinshipStudio-v3.5.2-Setup.exe`** from [Releases](https://github.com/Karthus3560/monster-hunter-stories-2-trainer/releases/tag/v3.5.2).
 2. Run Setup once. It installs or upgrades the existing **Kinship Studio** app and desktop shortcut. It keeps one installation across versions; administrator access is not needed. The internal executable remains `RidersToolkit.exe`.
 3. Start Stories 2 from Steam or use **Launch game**. Load a solo save; the trainer connects automatically.
 4. Switch on the controls you want. Open quick controls with **Alt+W**. **F12** stops live maintenance controls.
 
 The Windows release is self-contained: a separate .NET runtime is not needed. **Profiles & hotkeys → Check for updates** downloads a verified installer and offers **Restart & update**. Profiles, theme and backups are preserved. The portable ZIP is also available for manual use.
 
-**Code signing:** the release is still unsigned. Updates work independently of signing. A publicly trusted publisher signature requires an identity-validated certificate or approved service; self-signing would not make other PCs trust it. Read [updates and code signing](docs/UPDATES-AND-SIGNING.md). Building the source requires the .NET 10 SDK.
+**Code signing:** the release is still unsigned. Updates work independently of signing. A publicly trusted publisher signature requires an identity-validated certificate or approved service; self-signing would not make other PCs trust it. Read [updates and code signing](UPDATES-AND-SIGNING.md). Building the source requires the .NET 10 SDK.
 
 ![App update dialog preview: one installed app with preserved settings](screenshots/app-updates.png)
 
@@ -81,7 +81,7 @@ The UI pairs a readable white workspace or navy night theme with original pixel 
 - UI checks cover the real font/assets, theme persistence, compact/wide card placement, editor opening, backup gates, overlay focus behavior and native test windows. They do not prove visibility over an exclusive DirectX surface.
 - This repository ships source and original UI assets, **not game archives, save files, downloaded trainers or private process dumps**.
 
-[Testing guide](docs/TESTING.md) · [Source architecture](docs/ARCHITECTURE.md) · [Third-party notices](THIRD-PARTY-NOTICES.md) · [Report an issue](https://github.com/Karthus3560/monster-hunter-stories-2-trainer/issues/new/choose)
+[Testing guide](TESTING.md) · [Source architecture](ARCHITECTURE.md) · [Third-party notices](THIRD-PARTY-NOTICES.md) · [Report an issue](https://github.com/Karthus3560/monster-hunter-stories-2-trainer/issues/new/choose)
 
 ## Build it yourself
 
@@ -97,7 +97,7 @@ The script builds a self-contained Windows x64 release, runs portable checks, an
 
 ## Credits & license
 
-**Created by Ghaith Saad Jawad.** Source code is available under the [MIT license](LICENSE). Existing third-party components keep their own licenses; see [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
+**Created by Ghaith Saad Jawad.** Source code is available under the [MIT license](../LICENSE). Existing third-party components keep their own licenses; see [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
 
 Monster Hunter, Monster Hunter Stories 2, Rathalos and Navirou belong to Capcom. This is an **unofficial community project**, with no Capcom affiliation or endorsement. Research references and the Silkscreen font license are recorded in the notices. The MIT license does not grant ownership of Capcom's characters or trademarks.
 
